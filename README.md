@@ -110,33 +110,33 @@
 #### 🐍 Snake
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/snake.svg">
-  <img width="100%" alt="github contribution grid snake animation" src="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./dist/snake.svg">
+  <img width="100%" alt="github contribution grid snake animation" src="./dist/snake.svg">
 </picture>
 
 #### 👻 Pac-Man
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/pacman-contribution-graph.svg">
-  <img width="100%" alt="pacman contribution graph animation" src="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/pacman-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./dist/pacman-contribution-graph.svg">
+  <img width="100%" alt="pacman contribution graph animation" src="./dist/pacman-contribution-graph.svg">
 </picture>
 
 #### 🧱 Breakout
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/breakout-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/breakout-contribution-graph.svg">
-  <img width="100%" alt="breakout contribution graph animation" src="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/breakout-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/breakout-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./dist/breakout-contribution-graph.svg">
+  <img width="100%" alt="breakout contribution graph animation" src="./dist/breakout-contribution-graph.svg">
 </picture>
 
 #### 🚀 Galaga
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/galaga-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/galaga-contribution-graph.svg">
-  <img width="100%" alt="galaga contribution graph animation" src="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/galaga-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/galaga-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./dist/galaga-contribution-graph.svg">
+  <img width="100%" alt="galaga contribution graph animation" src="./dist/galaga-contribution-graph.svg">
 </picture>
 
 ###
