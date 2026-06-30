@@ -21,12 +21,14 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Generate snake animation
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/snake.svg
             dist/snake-dark.svg?palette=github-dark
+            dist/snake.gif
+            dist/snake-dark.gif?palette=github-dark
 
       - name: Generate arcade games
         uses: abozanona/pacman-contribution-graph@main

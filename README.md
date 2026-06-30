@@ -110,69 +110,33 @@
 #### 🐍 Snake
 
 <picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/srinivas600/srinivas600/output/snake-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/srinivas600/srinivas600/output/snake.svg"
-  />
-  <img
-    alt="github contribution grid snake animation"
-    src="https://raw.githubusercontent.com/srinivas600/srinivas600/output/snake.svg"
-  />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/snake.svg">
+  <img width="100%" alt="github contribution grid snake animation" src="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/snake.svg">
 </picture>
 
 #### 👻 Pac-Man
 
 <picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/srinivas600/srinivas600/output/pacman-contribution-graph-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/srinivas600/srinivas600/output/pacman-contribution-graph.svg"
-  />
-  <img
-    alt="pacman contribution graph animation"
-    src="https://raw.githubusercontent.com/srinivas600/srinivas600/output/pacman-contribution-graph.svg"
-  />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/pacman-contribution-graph.svg">
+  <img width="100%" alt="pacman contribution graph animation" src="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/pacman-contribution-graph.svg">
 </picture>
 
 #### 🧱 Breakout
 
 <picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/srinivas600/srinivas600/output/breakout-contribution-graph-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/srinivas600/srinivas600/output/breakout-contribution-graph.svg"
-  />
-  <img
-    alt="breakout contribution graph animation"
-    src="https://raw.githubusercontent.com/srinivas600/srinivas600/output/breakout-contribution-graph.svg"
-  />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/breakout-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/breakout-contribution-graph.svg">
+  <img width="100%" alt="breakout contribution graph animation" src="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/breakout-contribution-graph.svg">
 </picture>
 
 #### 🚀 Galaga
 
 <picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/srinivas600/srinivas600/output/galaga-contribution-graph-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/srinivas600/srinivas600/output/galaga-contribution-graph.svg"
-  />
-  <img
-    alt="galaga contribution graph animation"
-    src="https://raw.githubusercontent.com/srinivas600/srinivas600/output/galaga-contribution-graph.svg"
-  />
+  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/galaga-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/galaga-contribution-graph.svg">
+  <img width="100%" alt="galaga contribution graph animation" src="https://cdn.jsdelivr.net/gh/srinivas600/srinivas600@output/galaga-contribution-graph.svg">
 </picture>
 
 ###
