@@ -1,6 +1,6 @@
 # Contribution graph generator
 
-Generates Snake, Pac-Man, Breakout, and Galaga animations with a synthetic contribution grid at **~70% green dot density** (instead of sparse real GitHub activity).
+Builds Snake, Pac-Man, Breakout, and Galaga animations from **real commit dates** in the `hitmehard` repo (last 365 days). If `GH_PAT` is set, GitHub API data is merged in for private contributions.
 
 ## Regenerate locally
 
@@ -10,8 +10,10 @@ npm install
 npm run generate
 ```
 
+Requires the `hitmehard` repo as a sibling folder (`../hitmehard`), or set `HITMEHARD_PATH`.
+
 Output is written to `../dist/`.
 
-## Adjust density
+## GitHub Actions
 
-Edit `DENSITY` in `generate-rich-graphs.mjs` (default `0.7` = 70% active days).
+Add a repo secret `GH_PAT` (classic PAT with `repo` scope) so stats cards and private `hitmehard` commits are included on your profile.
