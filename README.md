@@ -105,7 +105,7 @@
 
 <h3 align="left">🎮 Contribution Graph Games</h3>
 
-<p align="left">My GitHub activity, animated as classic arcade games — updated daily via GitHub Actions.</p>
+<p align="left">My GitHub activity, animated as classic arcade games, updated daily via GitHub Actions.</p>
 
 #### 🐍 Snake
 
