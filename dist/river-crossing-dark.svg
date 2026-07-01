@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" width="920" height="360" role="img" aria-label="River crossing puzzle animation">
+  
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#0f172a"/>
+        <stop offset="100%" stop-color="#1e293b"/>
+      </linearGradient>
+      <linearGradient id="riverGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#1d4ed8"/>
+        <stop offset="100%" stop-color="#1e3a8a"/>
+      </linearGradient>
+      <filter id="panelShadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00000066" flood-opacity="0.45"/>
+      </filter>
+    </defs>
+
+    <rect width="920" height="360" fill="url(#sky)"/>
+    <circle cx="780" cy="52" r="28" fill="#fbbf24" opacity="0.9"/>
+    <ellipse cx="140" cy="58" rx="42" ry="16" fill="#334155" opacity="0.85"/>
+    <ellipse cx="170" cy="50" rx="28" ry="14" fill="#334155" opacity="0.75"/>
+    <ellipse cx="620" cy="44" rx="36" ry="14" fill="#334155" opacity="0.55"/>
+
+    <rect x="0" y="88" width="920" height="272" fill="#14532d" opacity="0.15"/>
+
+    <!-- Left bank -->
+    <g filter="url(#panelShadow)">
+      <rect x="24" y="96" width="248" height="196" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    </g>
+    <text x="148" y="122" text-anchor="middle" fill="#f1f5f9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="15" font-weight="700">Start Bank</text>
+    <text x="108" y="144" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Sheep</text>
+    <text x="188" y="144" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Tigers</text>
+    <rect x="52" y="152" width="112" height="120" rx="12" fill="#166534" opacity="0.22"/>
+    <rect x="132" y="152" width="112" height="120" rx="12" fill="#166534" opacity="0.14"/>
+
+    <!-- River -->
+    <rect x="288" y="108" width="344" height="172" rx="16" fill="url(#riverGrad)"/>
+    <path d="M 300 170 Q 360 160 420 170 T 540 170 T 660 170 T 720 170" fill="none" stroke="#3b82f666" stroke-width="3" opacity="0.8">
+      <animate attributeName="d"
+        values="M 300 170 Q 360 160 420 170 T 540 170 T 660 170 T 720 170;
+                M 300 178 Q 360 188 420 178 T 540 178 T 660 178 T 720 178;
+                M 300 170 Q 360 160 420 170 T 540 170 T 660 170 T 720 170"
+        dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 300 210 Q 380 200 460 210 T 620 210" fill="none" stroke="#3b82f666" stroke-width="2" opacity="0.5">
+      <animate attributeName="d"
+        values="M 300 210 Q 380 200 460 210 T 620 210;
+                M 300 218 Q 380 228 460 218 T 620 218;
+                M 300 210 Q 380 200 460 210 T 620 210"
+        dur="5s" repeatCount="indefinite"/>
+    </path>
+    <text x="460" y="136" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, sans-serif" font-size="13" font-weight="600" opacity="0.9">River</text>
+
+    <!-- Right bank -->
+    <g filter="url(#panelShadow)">
+      <rect x="648" y="96" width="248" height="196" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    </g>
+    <text x="772" y="122" text-anchor="middle" fill="#f1f5f9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="15" font-weight="700">Goal Bank</text>
+    <text x="732" y="144" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Sheep</text>
+    <text x="812" y="144" text-anchor="middle" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Tigers</text>
+    <rect x="676" y="152" width="112" height="120" rx="12" fill="#166534" opacity="0.22"/>
+    <rect x="756" y="152" width="112" height="120" rx="12" fill="#166534" opacity="0.14"/>
+
+    <!-- Header -->
+    <text x="32" y="42" fill="#f1f5f9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="22" font-weight="700">River Crossing</text>
+    <text x="32" y="64" fill="#94a3b8" font-family="Segoe UI, sans-serif" font-size="12">Level 1 — Ferry 3 sheep &amp; 3 tigers. Boat fits the farmer + one animal.</text>
+    <text x="32" y="80" fill="#f87171" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600">Rule: Never leave more tigers than sheep on either bank.</text>
+  
+  <g opacity="0">
+    <g>
+      <ellipse cx="406" cy="224" rx="52" ry="10" fill="#00000066" opacity="0.25"/>
+      <path d="M 364 216 Q 406 232 448 216 L 440 206 Q 406 200 372 206 Z"
+            fill="#78350f" stroke="#92400e" stroke-width="1.5"/>
+      <rect x="378" y="200" width="56" height="5" rx="2" fill="#92400e"/>
+    </g>
+    <g>
+      <circle cx="384" cy="172" r="9" fill="#fcd34d" stroke="#334155" stroke-width="1"/>
+      <rect x="374" y="180" width="20" height="16" rx="4" fill="#3b82f6"/>
+      <text x="384" y="204" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="Segoe UI, sans-serif">Farmer</text>
+    </g>
+    <g>
+      <circle cx="108" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="108" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="190" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="197" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="108" cy="244" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="242" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="249" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="188" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="188" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="190" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="197" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="188" cy="244" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="242" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="249" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <rect x="24" y="308" width="856" height="10" rx="5" fill="#334155"/>
+    <rect x="24" y="308" width="71.3" height="10" rx="5" fill="#38bdf8"/>
+    <text x="32" y="302" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Ferry trip 1 of 12</text>
+    <text x="888" y="302" text-anchor="end" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">
+      Left 3🐑 3🐯  ·  Right 0🐑 0🐯
+    </text>
+    <text x="460" y="342" text-anchor="middle" fill="#f1f5f9"
+      font-family="Segoe UI, sans-serif" font-size="12" font-weight="600">
+      Board is safe — keep ferrying…
+    </text>
+  
+      <set attributeName="opacity" to="1" begin="0ms" end="6500ms"/>
+      <set attributeName="opacity" to="0" begin="6500ms"/>
+    </g>
+<g opacity="0">
+    <g>
+      <ellipse cx="566" cy="224" rx="52" ry="10" fill="#00000066" opacity="0.25"/>
+      <path d="M 524 216 Q 566 232 608 216 L 600 206 Q 566 200 532 206 Z"
+            fill="#78350f" stroke="#92400e" stroke-width="1.5"/>
+      <rect x="538" y="200" width="56" height="5" rx="2" fill="#92400e"/>
+    </g>
+    <g>
+      <circle cx="544" cy="172" r="9" fill="#fcd34d" stroke="#334155" stroke-width="1"/>
+      <rect x="534" y="180" width="20" height="16" rx="4" fill="#3b82f6"/>
+      <text x="544" y="204" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="Segoe UI, sans-serif">Farmer</text>
+    </g>
+    <g>
+      <circle cx="108" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="108" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="190" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="197" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="108" cy="244" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="242" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="249" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="188" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="188" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="190" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="197" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="772" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="574" cy="192" r="22" fill="#00000066" opacity="0.35"/>
+      <circle cx="574" cy="190" r="22" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="574" y="197" text-anchor="middle" font-size="20">🐯</text>
+    </g>
+    <rect x="24" y="308" width="856" height="10" rx="5" fill="#334155"/>
+    <rect x="24" y="308" width="142.7" height="10" rx="5" fill="#38bdf8"/>
+    <text x="32" y="302" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Ferry trip 2 of 12</text>
+    <text x="888" y="302" text-anchor="end" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">
+      Left 3🐑 2🐯  ·  Right 0🐑 1🐯
+    </text>
+    <text x="460" y="342" text-anchor="middle" fill="#f1f5f9"
+      font-family="Segoe UI, sans-serif" font-size="12" font-weight="600">
+      Board is safe — keep ferrying…
+    </text>
+  
+      <set attributeName="opacity" to="1" begin="6500ms" end="13000ms"/>
+      <set attributeName="opacity" to="0" begin="13000ms"/>
+    </g>
+<g opacity="0">
+    <g>
+      <ellipse cx="406" cy="224" rx="52" ry="10" fill="#00000066" opacity="0.25"/>
+      <path d="M 364 216 Q 406 232 448 216 L 440 206 Q 406 200 372 206 Z"
+            fill="#78350f" stroke="#92400e" stroke-width="1.5"/>
+      <rect x="378" y="200" width="56" height="5" rx="2" fill="#92400e"/>
+    </g>
+    <g>
+      <circle cx="384" cy="172" r="9" fill="#fcd34d" stroke="#334155" stroke-width="1"/>
+      <rect x="374" y="180" width="20" height="16" rx="4" fill="#3b82f6"/>
+      <text x="384" y="204" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="Segoe UI, sans-serif">Farmer</text>
+    </g>
+    <g>
+      <circle cx="108" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="108" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="190" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="197" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="108" cy="244" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="242" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="249" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="188" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="188" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="190" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="197" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="772" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <rect x="24" y="308" width="856" height="10" rx="5" fill="#334155"/>
+    <rect x="24" y="308" width="214.0" height="10" rx="5" fill="#38bdf8"/>
+    <text x="32" y="302" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Ferry trip 3 of 12</text>
+    <text x="888" y="302" text-anchor="end" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">
+      Left 3🐑 2🐯  ·  Right 0🐑 1🐯
+    </text>
+    <text x="460" y="342" text-anchor="middle" fill="#f1f5f9"
+      font-family="Segoe UI, sans-serif" font-size="12" font-weight="600">
+      Board is safe — keep ferrying…
+    </text>
+  
+      <set attributeName="opacity" to="1" begin="13000ms" end="19500ms"/>
+      <set attributeName="opacity" to="0" begin="19500ms"/>
+    </g>
+<g opacity="0">
+    <g>
+      <ellipse cx="566" cy="224" rx="52" ry="10" fill="#00000066" opacity="0.25"/>
+      <path d="M 524 216 Q 566 232 608 216 L 600 206 Q 566 200 532 206 Z"
+            fill="#78350f" stroke="#92400e" stroke-width="1.5"/>
+      <rect x="538" y="200" width="56" height="5" rx="2" fill="#92400e"/>
+    </g>
+    <g>
+      <circle cx="544" cy="172" r="9" fill="#fcd34d" stroke="#334155" stroke-width="1"/>
+      <rect x="534" y="180" width="20" height="16" rx="4" fill="#3b82f6"/>
+      <text x="544" y="204" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="Segoe UI, sans-serif">Farmer</text>
+    </g>
+    <g>
+      <circle cx="108" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="108" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="190" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="197" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="108" cy="244" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="242" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="249" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="188" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="772" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="772" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="190" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="197" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="574" cy="192" r="22" fill="#00000066" opacity="0.35"/>
+      <circle cx="574" cy="190" r="22" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="574" y="197" text-anchor="middle" font-size="20">🐯</text>
+    </g>
+    <rect x="24" y="308" width="856" height="10" rx="5" fill="#334155"/>
+    <rect x="24" y="308" width="285.3" height="10" rx="5" fill="#38bdf8"/>
+    <text x="32" y="302" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Ferry trip 4 of 12</text>
+    <text x="888" y="302" text-anchor="end" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">
+      Left 3🐑 1🐯  ·  Right 0🐑 2🐯
+    </text>
+    <text x="460" y="342" text-anchor="middle" fill="#f1f5f9"
+      font-family="Segoe UI, sans-serif" font-size="12" font-weight="600">
+      Board is safe — keep ferrying…
+    </text>
+  
+      <set attributeName="opacity" to="1" begin="19500ms" end="26000ms"/>
+      <set attributeName="opacity" to="0" begin="26000ms"/>
+    </g>
+<g opacity="0">
+    <g>
+      <ellipse cx="406" cy="224" rx="52" ry="10" fill="#00000066" opacity="0.25"/>
+      <path d="M 364 216 Q 406 232 448 216 L 440 206 Q 406 200 372 206 Z"
+            fill="#78350f" stroke="#92400e" stroke-width="1.5"/>
+      <rect x="378" y="200" width="56" height="5" rx="2" fill="#92400e"/>
+    </g>
+    <g>
+      <circle cx="384" cy="172" r="9" fill="#fcd34d" stroke="#334155" stroke-width="1"/>
+      <rect x="374" y="180" width="20" height="16" rx="4" fill="#3b82f6"/>
+      <text x="384" y="204" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="Segoe UI, sans-serif">Farmer</text>
+    </g>
+    <g>
+      <circle cx="108" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="108" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="190" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="197" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="108" cy="244" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="242" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="249" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="188" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="772" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="772" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="190" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="197" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <rect x="24" y="308" width="856" height="10" rx="5" fill="#334155"/>
+    <rect x="24" y="308" width="356.7" height="10" rx="5" fill="#38bdf8"/>
+    <text x="32" y="302" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Ferry trip 5 of 12</text>
+    <text x="888" y="302" text-anchor="end" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">
+      Left 3🐑 1🐯  ·  Right 0🐑 2🐯
+    </text>
+    <text x="460" y="342" text-anchor="middle" fill="#f1f5f9"
+      font-family="Segoe UI, sans-serif" font-size="12" font-weight="600">
+      Board is safe — keep ferrying…
+    </text>
+  
+      <set attributeName="opacity" to="1" begin="26000ms" end="32500ms"/>
+      <set attributeName="opacity" to="0" begin="32500ms"/>
+    </g>
+<g opacity="0">
+    <g>
+      <ellipse cx="566" cy="224" rx="52" ry="10" fill="#00000066" opacity="0.25"/>
+      <path d="M 524 216 Q 566 232 608 216 L 600 206 Q 566 200 532 206 Z"
+            fill="#78350f" stroke="#92400e" stroke-width="1.5"/>
+      <rect x="538" y="200" width="56" height="5" rx="2" fill="#92400e"/>
+    </g>
+    <g>
+      <circle cx="544" cy="172" r="9" fill="#fcd34d" stroke="#334155" stroke-width="1"/>
+      <rect x="534" y="180" width="20" height="16" rx="4" fill="#3b82f6"/>
+      <text x="544" y="204" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="Segoe UI, sans-serif">Farmer</text>
+    </g>
+    <g>
+      <circle cx="108" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="108" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="190" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="197" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="188" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="692" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="772" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="772" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="190" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="197" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="574" cy="192" r="22" fill="#00000066" opacity="0.35"/>
+      <circle cx="574" cy="190" r="22" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="574" y="197" text-anchor="middle" font-size="20">🐑</text>
+    </g>
+    <rect x="24" y="308" width="856" height="10" rx="5" fill="#334155"/>
+    <rect x="24" y="308" width="428.0" height="10" rx="5" fill="#38bdf8"/>
+    <text x="32" y="302" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Ferry trip 6 of 12</text>
+    <text x="888" y="302" text-anchor="end" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">
+      Left 2🐑 1🐯  ·  Right 1🐑 2🐯
+    </text>
+    <text x="460" y="342" text-anchor="middle" fill="#f87171"
+      font-family="Segoe UI, sans-serif" font-size="12" font-weight="600">
+      ⚠ Unsafe bank — tigers would eat sheep!
+    </text>
+  
+      <set attributeName="opacity" to="1" begin="32500ms" end="39000ms"/>
+      <set attributeName="opacity" to="0" begin="39000ms"/>
+    </g>
+<g opacity="0">
+    <g>
+      <ellipse cx="406" cy="224" rx="52" ry="10" fill="#00000066" opacity="0.25"/>
+      <path d="M 364 216 Q 406 232 448 216 L 440 206 Q 406 200 372 206 Z"
+            fill="#78350f" stroke="#92400e" stroke-width="1.5"/>
+      <rect x="378" y="200" width="56" height="5" rx="2" fill="#92400e"/>
+    </g>
+    <g>
+      <circle cx="384" cy="172" r="9" fill="#fcd34d" stroke="#334155" stroke-width="1"/>
+      <rect x="374" y="180" width="20" height="16" rx="4" fill="#3b82f6"/>
+      <text x="384" y="204" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="Segoe UI, sans-serif">Farmer</text>
+    </g>
+    <g>
+      <circle cx="108" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="108" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="190" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="197" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="188" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="692" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="772" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="772" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="190" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="197" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <rect x="24" y="308" width="856" height="10" rx="5" fill="#334155"/>
+    <rect x="24" y="308" width="499.3" height="10" rx="5" fill="#38bdf8"/>
+    <text x="32" y="302" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Ferry trip 7 of 12</text>
+    <text x="888" y="302" text-anchor="end" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">
+      Left 2🐑 1🐯  ·  Right 1🐑 2🐯
+    </text>
+    <text x="460" y="342" text-anchor="middle" fill="#f87171"
+      font-family="Segoe UI, sans-serif" font-size="12" font-weight="600">
+      ⚠ Unsafe bank — tigers would eat sheep!
+    </text>
+  
+      <set attributeName="opacity" to="1" begin="39000ms" end="45500ms"/>
+      <set attributeName="opacity" to="0" begin="45500ms"/>
+    </g>
+<g opacity="0">
+    <g>
+      <ellipse cx="566" cy="224" rx="52" ry="10" fill="#00000066" opacity="0.25"/>
+      <path d="M 524 216 Q 566 232 608 216 L 600 206 Q 566 200 532 206 Z"
+            fill="#78350f" stroke="#92400e" stroke-width="1.5"/>
+      <rect x="538" y="200" width="56" height="5" rx="2" fill="#92400e"/>
+    </g>
+    <g>
+      <circle cx="544" cy="172" r="9" fill="#fcd34d" stroke="#334155" stroke-width="1"/>
+      <rect x="534" y="180" width="20" height="16" rx="4" fill="#3b82f6"/>
+      <text x="544" y="204" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="Segoe UI, sans-serif">Farmer</text>
+    </g>
+    <g>
+      <circle cx="108" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="188" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="692" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="692" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="190" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="197" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="772" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="772" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="190" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="197" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="574" cy="192" r="22" fill="#00000066" opacity="0.35"/>
+      <circle cx="574" cy="190" r="22" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="574" y="197" text-anchor="middle" font-size="20">🐑</text>
+    </g>
+    <rect x="24" y="308" width="856" height="10" rx="5" fill="#334155"/>
+    <rect x="24" y="308" width="570.7" height="10" rx="5" fill="#38bdf8"/>
+    <text x="32" y="302" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Ferry trip 8 of 12</text>
+    <text x="888" y="302" text-anchor="end" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">
+      Left 1🐑 1🐯  ·  Right 2🐑 2🐯
+    </text>
+    <text x="460" y="342" text-anchor="middle" fill="#f1f5f9"
+      font-family="Segoe UI, sans-serif" font-size="12" font-weight="600">
+      Board is safe — keep ferrying…
+    </text>
+  
+      <set attributeName="opacity" to="1" begin="45500ms" end="52000ms"/>
+      <set attributeName="opacity" to="0" begin="52000ms"/>
+    </g>
+<g opacity="0">
+    <g>
+      <ellipse cx="406" cy="224" rx="52" ry="10" fill="#00000066" opacity="0.25"/>
+      <path d="M 364 216 Q 406 232 448 216 L 440 206 Q 406 200 372 206 Z"
+            fill="#78350f" stroke="#92400e" stroke-width="1.5"/>
+      <rect x="378" y="200" width="56" height="5" rx="2" fill="#92400e"/>
+    </g>
+    <g>
+      <circle cx="384" cy="172" r="9" fill="#fcd34d" stroke="#334155" stroke-width="1"/>
+      <rect x="374" y="180" width="20" height="16" rx="4" fill="#3b82f6"/>
+      <text x="384" y="204" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="Segoe UI, sans-serif">Farmer</text>
+    </g>
+    <g>
+      <circle cx="108" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="108" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="108" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="188" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="692" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="692" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="190" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="197" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="772" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="772" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="190" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="197" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <rect x="24" y="308" width="856" height="10" rx="5" fill="#334155"/>
+    <rect x="24" y="308" width="642.0" height="10" rx="5" fill="#38bdf8"/>
+    <text x="32" y="302" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Ferry trip 9 of 12</text>
+    <text x="888" y="302" text-anchor="end" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">
+      Left 1🐑 1🐯  ·  Right 2🐑 2🐯
+    </text>
+    <text x="460" y="342" text-anchor="middle" fill="#f1f5f9"
+      font-family="Segoe UI, sans-serif" font-size="12" font-weight="600">
+      Board is safe — keep ferrying…
+    </text>
+  
+      <set attributeName="opacity" to="1" begin="52000ms" end="58500ms"/>
+      <set attributeName="opacity" to="0" begin="58500ms"/>
+    </g>
+<g opacity="0">
+    <g>
+      <ellipse cx="566" cy="224" rx="52" ry="10" fill="#00000066" opacity="0.25"/>
+      <path d="M 524 216 Q 566 232 608 216 L 600 206 Q 566 200 532 206 Z"
+            fill="#78350f" stroke="#92400e" stroke-width="1.5"/>
+      <rect x="538" y="200" width="56" height="5" rx="2" fill="#92400e"/>
+    </g>
+    <g>
+      <circle cx="544" cy="172" r="9" fill="#fcd34d" stroke="#334155" stroke-width="1"/>
+      <rect x="534" y="180" width="20" height="16" rx="4" fill="#3b82f6"/>
+      <text x="544" y="204" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="Segoe UI, sans-serif">Farmer</text>
+    </g>
+    <g>
+      <circle cx="188" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="692" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="692" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="190" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="197" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="692" cy="244" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="242" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="249" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="772" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="772" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="190" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="197" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="574" cy="192" r="22" fill="#00000066" opacity="0.35"/>
+      <circle cx="574" cy="190" r="22" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="574" y="197" text-anchor="middle" font-size="20">🐑</text>
+    </g>
+    <rect x="24" y="308" width="856" height="10" rx="5" fill="#334155"/>
+    <rect x="24" y="308" width="713.3" height="10" rx="5" fill="#38bdf8"/>
+    <text x="32" y="302" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Ferry trip 10 of 12</text>
+    <text x="888" y="302" text-anchor="end" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">
+      Left 0🐑 1🐯  ·  Right 3🐑 2🐯
+    </text>
+    <text x="460" y="342" text-anchor="middle" fill="#f1f5f9"
+      font-family="Segoe UI, sans-serif" font-size="12" font-weight="600">
+      Board is safe — keep ferrying…
+    </text>
+  
+      <set attributeName="opacity" to="1" begin="58500ms" end="65000ms"/>
+      <set attributeName="opacity" to="0" begin="65000ms"/>
+    </g>
+<g opacity="0">
+    <g>
+      <ellipse cx="406" cy="224" rx="52" ry="10" fill="#00000066" opacity="0.25"/>
+      <path d="M 364 216 Q 406 232 448 216 L 440 206 Q 406 200 372 206 Z"
+            fill="#78350f" stroke="#92400e" stroke-width="1.5"/>
+      <rect x="378" y="200" width="56" height="5" rx="2" fill="#92400e"/>
+    </g>
+    <g>
+      <circle cx="384" cy="172" r="9" fill="#fcd34d" stroke="#334155" stroke-width="1"/>
+      <rect x="374" y="180" width="20" height="16" rx="4" fill="#3b82f6"/>
+      <text x="384" y="204" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="Segoe UI, sans-serif">Farmer</text>
+    </g>
+    <g>
+      <circle cx="188" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="188" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="188" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="692" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="692" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="190" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="197" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="692" cy="244" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="242" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="249" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="772" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="772" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="190" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="197" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <rect x="24" y="308" width="856" height="10" rx="5" fill="#334155"/>
+    <rect x="24" y="308" width="784.7" height="10" rx="5" fill="#38bdf8"/>
+    <text x="32" y="302" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Ferry trip 11 of 12</text>
+    <text x="888" y="302" text-anchor="end" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">
+      Left 0🐑 1🐯  ·  Right 3🐑 2🐯
+    </text>
+    <text x="460" y="342" text-anchor="middle" fill="#f1f5f9"
+      font-family="Segoe UI, sans-serif" font-size="12" font-weight="600">
+      Board is safe — keep ferrying…
+    </text>
+  
+      <set attributeName="opacity" to="1" begin="65000ms" end="71500ms"/>
+      <set attributeName="opacity" to="0" begin="71500ms"/>
+    </g>
+<g opacity="0">
+    <g>
+      <ellipse cx="566" cy="224" rx="52" ry="10" fill="#00000066" opacity="0.25"/>
+      <path d="M 524 216 Q 566 232 608 216 L 600 206 Q 566 200 532 206 Z"
+            fill="#78350f" stroke="#92400e" stroke-width="1.5"/>
+      <rect x="538" y="200" width="56" height="5" rx="2" fill="#92400e"/>
+    </g>
+    <g>
+      <circle cx="544" cy="172" r="9" fill="#fcd34d" stroke="#334155" stroke-width="1"/>
+      <rect x="534" y="180" width="20" height="16" rx="4" fill="#3b82f6"/>
+      <text x="544" y="204" text-anchor="middle" font-size="9" fill="#94a3b8" font-family="Segoe UI, sans-serif">Farmer</text>
+    </g>
+    <g>
+      <circle cx="692" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="138" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="145" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="692" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="190" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="197" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="692" cy="244" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="692" cy="242" r="20" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+      <text x="692" y="249" text-anchor="middle" font-size="18">🐑</text>
+    </g>
+    <g>
+      <circle cx="772" cy="140" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="138" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="145" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="772" cy="192" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="190" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="197" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="772" cy="244" r="20" fill="#00000066" opacity="0.35"/>
+      <circle cx="772" cy="242" r="20" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="772" y="249" text-anchor="middle" font-size="18">🐯</text>
+    </g>
+    <g>
+      <circle cx="574" cy="192" r="22" fill="#00000066" opacity="0.35"/>
+      <circle cx="574" cy="190" r="22" fill="#431407" stroke="#ea580c" stroke-width="2.5"/>
+      <text x="574" y="197" text-anchor="middle" font-size="20">🐯</text>
+    </g>
+    <rect x="24" y="308" width="856" height="10" rx="5" fill="#334155"/>
+    <rect x="24" y="308" width="856.0" height="10" rx="5" fill="#4ade80"/>
+    <text x="32" y="302" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">Ferry trip 12 of 12</text>
+    <text x="888" y="302" text-anchor="end" fill="#94a3b8" font-size="11" font-family="Segoe UI, sans-serif">
+      Left 0🐑 0🐯  ·  Right 3🐑 3🐯
+    </text>
+    <text x="460" y="342" text-anchor="middle" fill="#4ade80"
+      font-family="Segoe UI, sans-serif" font-size="12" font-weight="600">
+      ✓ All animals crossed safely!
+    </text>
+  
+      <set attributeName="opacity" to="1" begin="71500ms" end="78000ms"/>
+      <set attributeName="opacity" to="0" begin="78000ms"/>
+    </g>
+</svg>

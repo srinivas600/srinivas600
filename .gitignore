@@ -1,3 +1,6 @@
 node_modules/
 scripts/node_modules/
+scripts/.contribution-crawl/
+scripts/.mario-weeks.json
 snk-main/node_modules/
+river-crossing/

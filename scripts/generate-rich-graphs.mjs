@@ -3,6 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { ArcadeRenderer } from "pacman-contribution-graph";
 import { buildContributionData } from "./build-contribution-grid.mjs";
+import { renderContributionCrawl, renderMarioParkour } from "./generate-pathfinder-games.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -12,6 +13,8 @@ const GAMES = [
   { game: "pacman", light: "pacman-contribution-graph.svg", dark: "pacman-contribution-graph-dark.svg" },
   { game: "breakout", light: "breakout-contribution-graph.svg", dark: "breakout-contribution-graph-dark.svg" },
   { game: "galaga", light: "galaga-contribution-graph.svg", dark: "galaga-contribution-graph-dark.svg" },
+  { game: "bomberman", light: "bomberman-contribution-graph.svg", dark: "bomberman-contribution-graph-dark.svg" },
+  { game: "minesweeper", light: "minesweeper-contribution-graph.svg", dark: "minesweeper-contribution-graph-dark.svg" },
 ];
 
 async function renderArcadeGame({ game, light, dark }, contributions) {
@@ -74,6 +77,10 @@ async function main() {
   const snkActive = snkCells.filter((c) => c.level > 0).length;
   console.log(`Snake grid: ${snkActive}/${snkCells.length} active days`);
   await renderSnake(snkCells);
+
+  console.log("\nPuzzle & pathfinding games:");
+  await renderContributionCrawl();
+  await renderMarioParkour(contributions);
 
   console.log(`\nDone. Output written to ${DIST}`);
 }

@@ -20,6 +20,68 @@
 
 ###
 
+<h3 align="left">🎮 Contribution Graph Games</h3>
+
+<p align="left">My GitHub activity as arcade and pathfinding games — scroll to watch them all. Updated daily via GitHub Actions.</p>
+
+#### 🐍 Snake
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./dist/snake.svg">
+  <img width="100%" alt="github contribution grid snake animation" src="./dist/snake.svg">
+</picture>
+
+#### 👻 Pac-Man
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./dist/pacman-contribution-graph.svg">
+  <img width="100%" alt="pacman contribution graph animation" src="./dist/pacman-contribution-graph.svg">
+</picture>
+
+#### 🧱 Breakout
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/breakout-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./dist/breakout-contribution-graph.svg">
+  <img width="100%" alt="breakout contribution graph animation" src="./dist/breakout-contribution-graph.svg">
+</picture>
+
+#### 🚀 Galaga
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/galaga-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./dist/galaga-contribution-graph.svg">
+  <img width="100%" alt="galaga contribution graph animation" src="./dist/galaga-contribution-graph.svg">
+</picture>
+
+#### 💣 Bomberman
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/bomberman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./dist/bomberman-contribution-graph.svg">
+  <img width="100%" alt="bomberman contribution graph animation" src="./dist/bomberman-contribution-graph.svg">
+</picture>
+
+#### 💠 Minesweeper
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/minesweeper-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./dist/minesweeper-contribution-graph.svg">
+  <img width="100%" alt="minesweeper contribution graph animation" src="./dist/minesweeper-contribution-graph.svg">
+</picture>
+
+
+#### ⚔️ Contribution Crawl
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./dist/contribution-crawl-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./dist/contribution-crawl-light.svg">
+  <img width="100%" alt="contribution crawl BFS pathfinding animation" src="./dist/contribution-crawl-light.svg">
+</picture>
+
+
 <img align="right" height="150" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" alt="coding animation" />
 
 ###
@@ -174,43 +236,5 @@
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
   </a>
 </div>
-
-###
-
-<h3 align="left">🎮 Contribution Graph Games</h3>
-
-<p align="left">My GitHub activity, animated as classic arcade games, updated daily via GitHub Actions.</p>
-
-#### 🐍 Snake
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./dist/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./dist/snake.svg">
-  <img width="100%" alt="github contribution grid snake animation" src="./dist/snake.svg">
-</picture>
-
-#### 👻 Pac-Man
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./dist/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./dist/pacman-contribution-graph.svg">
-  <img width="100%" alt="pacman contribution graph animation" src="./dist/pacman-contribution-graph.svg">
-</picture>
-
-#### 🧱 Breakout
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./dist/breakout-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./dist/breakout-contribution-graph.svg">
-  <img width="100%" alt="breakout contribution graph animation" src="./dist/breakout-contribution-graph.svg">
-</picture>
-
-#### 🚀 Galaga
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./dist/galaga-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./dist/galaga-contribution-graph.svg">
-  <img width="100%" alt="galaga contribution graph animation" src="./dist/galaga-contribution-graph.svg">
-</picture>
 
 ###
