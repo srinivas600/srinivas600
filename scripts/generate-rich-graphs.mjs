@@ -4,6 +4,7 @@ import { fileURLToPath } from "url";
 import { ArcadeRenderer } from "pacman-contribution-graph";
 import { buildContributionData } from "./build-contribution-grid.mjs";
 import { renderContributionCrawl, renderMarioParkour } from "./generate-pathfinder-games.mjs";
+import { patchBombermanCompletion } from "./patch-bomberman-completion.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -69,6 +70,8 @@ async function main() {
   console.log(
     `Generating graphs from ${source} data (${active}/${contributions.length} active days in the last year)`
   );
+
+  patchBombermanCompletion();
 
   for (const game of GAMES) {
     await renderArcadeGame(game, contributions);
