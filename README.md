@@ -8,7 +8,7 @@
 <p align="left">
   I design training datasets for client AI models, SFT, RLMF, and RL trajectories and evaluate agents across
   <strong>Terminal-Bench</strong>, <strong>SWE-bench</strong>, <strong>OSWorld</strong>, and similar RL environments
-  for providers including <strong>OpenAI</strong>, <strong>Claude</strong>, <strong>Tencent</strong>, and <strong>Alibaba</strong>.
+  for providers including <strong>OpenAI</strong>, <strong>Anthropic</strong>, <strong>Tencent</strong>, and <strong>Alibaba</strong>.
 </p>
 
 ###
