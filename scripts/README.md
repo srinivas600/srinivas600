@@ -1,6 +1,10 @@
 # Contribution graph generator
 
-Builds Snake, Pac-Man, Breakout, and Galaga animations from **real commit dates** in the `hitmehard` repo (last 365 days). If `GH_PAT` is set, GitHub API data is merged in for private contributions.
+Builds Snake, Pac-Man, Breakout, Galaga, Bomberman, and more from your GitHub contribution history.
+
+**Locally:** uses the `hitmehard` sibling repo (`../hitmehard`) when present, optionally merged with the GitHub API if `GH_PAT` is set.
+
+**CI (GitHub Actions):** fetches contributions via the GitHub GraphQL API using `GITHUB_TOKEN` (or `GH_PAT` for private commits). No separate `hitmehard` checkout is required.
 
 ## Regenerate locally
 

@@ -1,4 +1,5 @@
 import { execSync } from "child_process";
+import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { generateScenarioContributions } from "pacman-contribution-graph";
@@ -34,10 +35,12 @@ export function getCommitCountsByDate(repoPath = process.env.HITMEHARD_PATH || D
   return counts;
 }
 
-export function buildContributionsFromRepo(repoPath) {
-  const template = generateScenarioContributions("full").contributions;
-  const countsByDate = getCommitCountsByDate(repoPath);
+export function hasLocalRepo(repoPath = process.env.HITMEHARD_PATH || DEFAULT_REPO) {
+  return fs.existsSync(path.join(repoPath, ".git"));
+}
 
+export function buildContributionsFromCounts(countsByDate) {
+  const template = generateScenarioContributions("full").contributions;
   return template.map((cell) => {
     const dateStr = cell.date.toISOString().slice(0, 10);
     const count = countsByDate[dateStr] || 0;
@@ -47,6 +50,10 @@ export function buildContributionsFromRepo(repoPath) {
       level: countToLevelName(count),
     };
   });
+}
+
+export function buildContributionsFromRepo(repoPath) {
+  return buildContributionsFromCounts(getCommitCountsByDate(repoPath));
 }
 
 export function contributionsToSnkCells(contributions) {
@@ -113,34 +120,43 @@ export async function fetchGithubContributions(username, token) {
 }
 
 export async function buildContributionData({
-  username = "srinivas600",
+  username = process.env.GITHUB_USERNAME || "srinivas600",
   repoPath = process.env.HITMEHARD_PATH || DEFAULT_REPO,
 } = {}) {
   const token = process.env.GH_PAT || process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
-  const repoContributions = buildContributionsFromRepo(repoPath);
-  const snkCells = contributionsToSnkCells(repoContributions);
+  const localRepo = hasLocalRepo(repoPath);
 
-  if (!token) {
-    console.log("No GitHub token — using hitmehard git history for the contribution grid.");
-    return { contributions: repoContributions, snkCells, source: "hitmehard" };
+  if (token) {
+    try {
+      const apiCells = await fetchGithubContributions(username, token);
+      const countsByDate = Object.fromEntries(apiCells.map((c) => [c.date, c.count]));
+
+      if (localRepo) {
+        const repoCounts = getCommitCountsByDate(repoPath);
+        for (const [date, count] of Object.entries(repoCounts)) {
+          countsByDate[date] = Math.max(countsByDate[date] || 0, count);
+        }
+      }
+
+      const contributions = buildContributionsFromCounts(countsByDate);
+      const snkCells = contributionsToSnkCells(contributions);
+      const source = localRepo ? "merged" : "github";
+      console.log(`Using ${source} contribution data for ${username}.`);
+      return { contributions, snkCells, source };
+    } catch (err) {
+      if (!localRepo) throw err;
+      console.warn(`GitHub API fetch failed (${err.message}); using hitmehard git history.`);
+    }
   }
 
-  try {
-    const apiCells = await fetchGithubContributions(username, token);
-    const countsByDate = Object.fromEntries(apiCells.map((c) => [c.date, c.count]));
-    const repoCounts = getCommitCountsByDate(repoPath);
-
-    const contributions = repoContributions.map((cell) => {
-      const dateStr = cell.date.toISOString().slice(0, 10);
-      const count = Math.max(countsByDate[dateStr] || 0, repoCounts[dateStr] || 0);
-      return { ...cell, count, level: countToLevelName(count) };
-    });
-
-  const mergedSnkCells = contributionsToSnkCells(contributions);
-    console.log("Merged GitHub API data with hitmehard git history.");
-    return { contributions, snkCells: mergedSnkCells, source: "merged" };
-  } catch (err) {
-    console.warn(`GitHub API fetch failed (${err.message}); using hitmehard git history.`);
-    return { contributions: repoContributions, snkCells, source: "hitmehard" };
+  if (!localRepo) {
+    throw new Error(
+      "No local hitmehard repo and no GitHub token. Set GH_PAT/GITHUB_TOKEN in CI, or clone hitmehard locally."
+    );
   }
+
+  const contributions = buildContributionsFromRepo(repoPath);
+  const snkCells = contributionsToSnkCells(contributions);
+  console.log("No GitHub token — using hitmehard git history for the contribution grid.");
+  return { contributions, snkCells, source: "hitmehard" };
 }
