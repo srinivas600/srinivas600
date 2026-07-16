@@ -1,12 +1,17 @@
-<h2 align="left">Hi 👋! My name is Srinivas and I'm a Data Scientist & AI Engineer from India</h2>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile/neofetch-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./profile/neofetch-light.svg">
+    <img width="100%" alt="srinivas600 neofetch profile card" src="./profile/neofetch-dark.svg">
+  </picture>
+</div>
+
+###
 
 <p align="left">
   Building end-to-end ML pipelines, RAG systems, and agentic AI workflows.
-  Currently at <strong>Evoke Technologies</strong> · Previously AI Engineer @ Turing · Systems Engineer (AI/ML) @ Infosys
-</p>
-
-<p align="left">
-  I design training datasets for client AI models, SFT, RLMF, and RL trajectories and evaluate agents across
+  Currently at <strong>Evoke Technologies</strong> · Previously AI Engineer @ Turing · Systems Engineer (AI/ML) @ Infosys.
+  I design training datasets for client AI models — SFT, RLMF, and RL trajectories — and evaluate agents across
   <strong>Terminal-Bench</strong>, <strong>SWE-bench</strong>, <strong>OSWorld</strong>, and similar RL environments
   for providers including <strong>OpenAI</strong>, <strong>Anthropic</strong>, <strong>Tencent</strong>, and <strong>Alibaba</strong>.
 </p>
